@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{Business Bank}</title>
+
+
+       <!--For bootstarp CDN And File-->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+       <link rel="stylesheet" href="bootstrap.min.css">
+       
+       <!-- For CSS File -->
+       <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+
+
+
+
+<!-- Login Area Starts -->
+
+
+<div class="loginArea">
+    <h1>Log In Now</h1>
+
+    <div class="login">
+
+       
+  
+            <input required type="email" class="email form-control" placeholder="Enter Your Mail"><p>
+          
+                <input required type="password" class="pass form-control" placeholder="Enter Your Password"><p>
+         
+                <button class="btns">LogIn</button><p> 
+
+     
+    
+    </div>
+
+    
+
+</div>
+
+<!-- Login Area Ends -->
+
+
+<p class="msg"></p>
+
+
+
+   <!-- Balance Area Starts -->
+
+  <div class="balance">
+    
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4 bal1">
+                <h4>Deposit</h4>
+                <h2>$ <span id="cuurentDeposit">00</span></h2>
+            </div>
+
+            <div class="col-sm-12 col-md-4 bal2">
+                <h4>Withdraw</h4>
+                <h2>$ <span id="cuurentWithdraw">00</span></h2>
+            </div>
+
+            <div class="col-sm-12 col-md-4 bal3">
+                <h4>Balance</h4>
+                <h2>$ <span id="currentBalance">100</span></h2>
+            </div>
+
+        </div>
+        
+         <div class="row">
+
+            <div class="col-md-6 deposit">
+                <h3>Deposit</h3><p>
+                <input type="number" id="depositAmmount" placeholder="$ amount you want to deposit"><p>
+                <button class="depositbtn btn btn-success">Deposit</button>
+            </div>
+
+            <div class="col-md-6 withdraw">
+                <h3> Withdraw</h3><p>
+                <input type="number" id="withdrawAmmount" placeholder="$ amount you want to withdraw"><p>
+                <button class="withdrawbtn btn btn-success">Withdraw</button>
+            </div>
+
+         </div>
+
+
+    </div>
+
+
+
+    <!-- Balance Area Ends -->
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

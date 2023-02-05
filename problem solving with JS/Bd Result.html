@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD Result</title>
+
+<!-- Es6 moduls and class -->
+    <style>
+         
+
+       @media screen and (min-width:780px) {
+
+
+        body{
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+        .div{
+            width: 30rem;
+        }
+
+        .num{
+            font-size: 1.5rem;
+            height: 3rem;
+            width: 20rem;
+            outline: none;
+            border-radius: .3rem;
+            border: 1px solid rgb(86, 49, 0);
+            box-shadow: 0 1rem 2rem rgba(4, 23, 8, 0.483);
+            color: rgb(6, 116, 53);
+            font-weight: bold;
+            font-style: italic;
+        
+        }
+
+        .num1{
+
+            font-size: 1.5rem;
+            height: 3rem;
+            width: 20rem;
+            outline: none;
+            border-radius: .3rem;
+            border: 1px solid rgb(86, 49, 0);
+            box-shadow: 0 1rem 2rem rgba(4, 23, 8, 0.483);
+            color: rgb(6, 116, 53);
+            font-weight: bold;
+            font-style: italic;
+
+
+        }
+       
+        #num2{
+           
+           font-size: 1.2rem;
+           height: 2rem;
+           width: 10rem;
+           outline: none;
+           border-radius: .3rem;
+           border: 1px solid rgb(86, 49, 0);
+           box-shadow: 0 1rem 2rem rgba(4, 23, 8, 0.483);
+           color: rgb(6, 116, 53);
+           font-weight: bold;
+           font-style: italic;
+
+
+        }
+        .btn{
+            font-size: 1.3rem;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding: .5rem 1.5rem;
+            color: rgb(7, 109, 75);
+            background:linear-gradient(rgb(255, 0, 195),rgb(143, 3, 171));
+            border-radius: .5rem;
+            border: none;
+        }
+        .btn:focus{
+            background: wheat;
+            color: black;
+        }
+      .p{
+        font-size: 1.5rem;
+        color: cornflowerblue;
+        font-family: monospace;
+        font-weight: bold;
+        font-style: italic;
+        border: .2rem solid rgba(3, 91, 33, 0.274);
+        text-align: center;
+        border-radius: .5rem;
+        width: 21rem;
+      }
+      
+      .table{
+        background-color: aquamarine;
+        margin: 2rem;
+        display: none;
+      }
+    
+      table{
+        border-collapse: collapse;
+      }
+      .table thead tr th{
+              
+        border: 2px solid black;
+        padding: .5rem 1rem;
+        background-color: rgb(160, 95, 135);
+        font-size: 1.2rem;
+        text-align: left;
+      }
+
+      .table tbody tr td{
+              
+              border: 2px solid black;
+              border-collapse: collapse;
+              background-color: rgb(205, 160, 144);
+              font-size: 1.1rem;
+              text-align: left;
+              padding: .3rem .2rem;
+            }
+
+
+      
+            .table1{
+        background-color: aquamarine;
+        margin: 2rem;
+        display: none;
+      }
+    
+      table{
+        border-collapse: collapse;
+      }
+      .table1 thead tr th{
+              
+        border: 2px solid black;
+        padding: .5rem 1rem;
+        background-color: rgb(160, 95, 135);
+        font-size: 1.2rem;
+        text-align: left;
+      }
+
+      .table1 tbody tr td{
+              
+              border: 2px solid black;
+              border-collapse: collapse;
+              background-color: rgb(205, 160, 144);
+              font-size: 1.1rem;
+              text-align: left;
+              padding: .3rem .2rem;
+            }
+         
+
+
+        
+       }
+
+
+
+
+       @media screen and (max-width:780px) {
+
+
+        body{
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+        .div{
+            width: 16rem;
+        }
+
+        .num{
+            font-size: 1.2rem;
+            height: 2rem;
+            width: 13rem;
+            outline: none;
+            border-radius: .3rem;
+            border: 1px solid rgb(86, 49, 0);
+            box-shadow: 0 1rem 2rem rgba(4, 23, 8, 0.483);
+            color: rgb(6, 116, 53);
+            font-weight: bold;
+            font-style: italic;
+        
+        }
+
+        .num1{
+
+            font-size: 1.2rem;
+            height: 2rem;
+            width: 13rem;
+            outline: none;
+            border-radius: .3rem;
+            border: 1px solid rgb(86, 49, 0);
+            box-shadow: 0 1rem 2rem rgba(4, 23, 8, 0.483);
+            color: rgb(6, 116, 53);
+            font-weight: bold;
+            font-style: italic;
+
+
+        }
+       
+        #num2{
+           
+           font-size: 1rem;
+           height: 1.5rem;
+           width: 8rem;
+           outline: none;
+           border-radius: .3rem;
+           border: 1px solid rgb(86, 49, 0);
+           box-shadow: 0 1rem 2rem rgba(4, 23, 8, 0.483);
+           color: rgb(6, 116, 53);
+           font-weight: bold;
+           font-style: italic;
+
+
+        }
+        .btn{
+            font-size: 1.3rem;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding: .5rem 1.5rem;
+            color: rgb(7, 109, 75);
+            background:linear-gradient(rgb(255, 0, 195),rgb(143, 3, 171));
+            border-radius: .5rem;
+            border: none;
+        }
+        .btn:focus{
+            background: wheat;
+            color: black;
+        }
+      .p{
+        font-size: 1.2rem;
+        color: cornflowerblue;
+        font-family: monospace;
+        font-weight: bold;
+        font-style: italic;
+        border: .2rem solid rgba(3, 91, 33, 0.274);
+        text-align: center;
+        border-radius: .5rem;
+        width: 15rem;
+      }
+      
+      .table{
+        background-color: aquamarine;
+        margin: 2rem;
+        display: none;
+      }
+    
+      table{
+        border-collapse: collapse;
+      }
+      .table thead tr th{
+              
+        border: 2px solid black;
+        padding: .2rem .6rem;
+        background-color: rgb(160, 95, 135);
+        font-size: 1.2rem;
+        text-align: left;
+      }
+
+      .table tbody tr td{
+              
+              border: 2px solid black;
+              border-collapse: collapse;
+              background-color: rgb(205, 160, 144);
+              font-size: 1.1rem;
+              text-align: left;
+              padding: .3rem .2rem;
+            }
+
+
+      
+            .table1{
+        background-color: aquamarine;
+        margin: 2rem;
+        display: none;
+      }
+    
+      table{
+        border-collapse: collapse;
+      }
+      .table1 thead tr th{
+              
+        border: 2px solid black;
+        padding: .2rem .6rem;
+        background-color: rgb(126, 186, 130);
+        font-size: 1.2rem;
+        text-align: left;
+      }
+
+      .table1 tbody tr td{
+              
+              border: 2px solid black;
+              border-collapse: collapse;
+              background-color: rgb(164, 90, 138);
+              font-size: 1.1rem;
+              text-align: left;
+              padding: .3rem .2rem;
+            }
+         
+
+
+
+        
+       }
+
+               
+
+    </style>
+</head>
+<body>
+    
+
+
+
+
+
+
+         
+  <div class="div">
+
+    <input class="num" type="number" placeholder="Roll Number" required><p>
+        <input class="num1" type="number" placeholder="Registation Number" required><p>
+
+        <select name="" id="num2">
+            <option value="Select Board">Select Board</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Comilla">Comilla</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Dinajpur">Dinajpur</option>
+            <option value="Shylet">Shylet</option>
+            <option value="Barishal">Barishal</option>
+        </select><p>
+    
+    
+        <button class="btn">Result</button>
+       
+    
+   </div>
+
+
+
+<!-- Sayed Result -->
+
+   <div class="table">
+
+
+    <table>
+        <thead>
+                 <tr>
+                    <th style="width: 5rem;">Code</th>
+                    <th style="width: 15rem;">Subject</th>
+                    <th style="width: 5rem;">Grade</th>
+                    <th style="width: 5rem;">Number</th>
+                    
+                 
+
+                 </tr>
+        </thead>
+        <tbody>
+     
+           <tr>   
+             <td>101</td>
+             <td>Bangla</td>
+             <td>A-</td>
+             <td>139</td>
+          </tr>
+
+          <tr>   
+            <td>107</td>
+            <td>English</td>
+            <td>A</td>
+            <td>156</td>
+         </tr>
+
+
+         <tr>   
+            <td>109</td>
+            <td>Mathmatics</td>
+            <td>A+</td>
+            <td>93</td>
+         </tr>
+
+
+         <tr>   
+            <td>136</td>
+            <td>Physics</td>
+            <td>A+</td>
+            <td>92</td>
+         </tr>
+
+         <tr>   
+            <td>137</td>
+            <td>Chemistry</td>
+            <td>A+</td>
+            <td>90</td>
+         </tr>
+         
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>You Got A+</td>
+          </tr>
+        </tbody>
+    </table>
+
+    
+   </div>
+
+
+
+<!-- Tarequl Result -->
+
+   <div class="table1">
+
+
+    <table>
+        <thead>
+                 <tr>
+                    <th style="width: 5rem;">Code</th>
+                    <th style="width: 15rem;">Subject</th>
+                    <th style="width: 5rem;">Grade</th>
+                    <th style="width: 5rem;">Number</th>
+                 
+
+                 </tr>
+        </thead>
+        <tbody>
+     
+           <tr>   
+             <td>101</td>
+             <td>Bangla</td>
+             <td>A</td>
+              <td>147</td>
+          </tr>
+
+          <tr>   
+            <td>107</td>
+            <td>English</td>
+            <td>A+</td>
+            <td>180</td>
+         </tr>
+
+
+         <tr>   
+            <td>109</td>
+            <td>Mathmatics</td>
+            <td>A+</td>
+            <td>82</td>
+         </tr>
+
+
+         <tr>   
+            <td>136</td>
+            <td>Physics</td>
+            <td>A+</td>
+            <td>100</td>
+         </tr>
+
+         <tr>   
+            <td>137</td>
+            <td>Chemistry</td>
+            <td>A+</td>
+            <td>86</td>
+         </tr>
+         
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>You Got A+</td>
+          </tr>
+        </tbody>
+    </table>
+
+    
+   </div>
+
+   <p class="p"></p>
+    
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="Bd Result (js).js" ></script>
+</body>
+</html>
